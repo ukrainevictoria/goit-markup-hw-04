@@ -28,7 +28,9 @@ h6 {
 p {
     margin: 0;
 }
-
+section{
+    padding: 120px 0;
+}
 img {
     display: block;
     max-width: 100%;
@@ -42,11 +44,6 @@ ul {
 a {
     text-decoration: none;
     }
-
-img {
-    display: block;
-    max-width: 100%;
-}
 
 .address {
     font-style: normal;
@@ -138,7 +135,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .page-nav .web-studio-logo {
     color: #4d5ae5;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 0.03em; 
@@ -232,15 +229,25 @@ p{font-size: 12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Main content */
+/* .container-professionalism{
+        background-image: url(./images/people-office-min.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 
+} */
 
 .our-professionalism {
+    background-color: #2e2f42;
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)),
+     url('../images/people-office-min.jpg');
     max-width: 1440px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    width: 100%;
 }
 
 .title {
@@ -254,27 +261,35 @@ p{font-size: 12px;
     margin: 0 auto 48px auto;
 }
 .button {
-    font-family: inherit;
-    background-color: #4d5ae5;
-    min-width: 169px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    border-radius: 4px;
-    padding: 16px 32px;
-    border: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        background-color: #4d5ae5;
+        color: #ffffff;
+        cursor: pointer;
+        letter-spacing: 0.04em;
+        text-align: center;
+        display: block;
+        min-width: 169px;
+        height: 56px;
+        margin: 0 auto;
+        padding: 16px 32px;
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%);
+        cursor: pointer;
+    
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
 /* колір фону при hover та focus */
 .button:hover,
 .button:focus {
-    background-color: #31d0aa;
+    background-color: #404bbf;
 }
-/* Competence*/
+
+/* Competence
 .our-competence {
      padding: 120px 0;
 }
@@ -294,43 +309,25 @@ p{font-size: 12px;
      clip: rect(0, 0, 0, 0);
      overflow: hidden;
  }
-.competence-item{
-    width: calc((100% - 3 * 24px) / 4);
-}
-.competence-icon-item.icon{
+.competence-icon-item{
+    /* width: calc((100% - 3 * 24px) / 4); */
+    /* flex-basis: calc((100% - 72px) / 4);
+} */
+/* .competence-icon-item.icon{
     background-color: #404bbf;
     border-radius: 50%;
     text-align: center;
     fill: #f4f4fd;
-}
-.competence-title {
+} */
+/* .competence-title {
     color: #2e2f42;
     font-weight: 500;
-    font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    font-size: 20;
+    font-size: 20px;
     margin-bottom: 8px;
-    
-        
 }
-.competence-list {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-    
-}
-.icon-design {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    border: 1px solid #8e8f99;
-    margin-bottom: 8px;
 
-}
 .competence-text {
     color: #434455;
     font-weight: 400;
@@ -338,12 +335,88 @@ p{font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+.competence-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    
+}
 
+ .icon-design {
+            border: 1px solid #8e8f99;
+            border-radius: 4px;
+            width: 264px;
+            height: 112px;
+            background: #f4f4fd;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+         .visually-hidden {
+             position: absolute;
+             width: 1px;
+             height: 1px;
+             margin: -1px;
+             border: 0;
+             padding: 0;
+             white-space: nowrap;
+             clip-path: inset(100%);
+             clip: rect(0 0 0 0);
+             overflow: hidden;
+         }
+    
+         .competence-icons-list {
+             display: flex;
+             text-align: left;
+             gap: 24px;
+         }
+    
+         .competence-icon-item {
+             flex-basis: calc((100% - 72px) / 4);
+         }
+    
+         /* style for naming of section Features, Portfolio */
+         
+        .competence-title,
+         .portfolio-name,
+         .team-name {
+             font-weight: 500;
+             font-size: 20px;
+             line-height: 1.2;
+             color: #2e2f42;
+             letter-spacing: 0.02em;
+             margin-bottom: 8px;
+         }
+    
+         /* styles for <p> of section Features, Team and Portfolio */
+         .competence-text,
+         .team-position,
+         .portfolio-dsr {
+             color: #434455;
+             font-weight: 400;
+             font-size: 16px;
+             line-height: 1.5;
+             letter-spacing: 0.02em;
+         }
+    
+         .icon-design {
+             border: 1px solid #8e8f99;
+             border-radius: 4px;
+             width: 264px;
+             height: 112px;
+             background: #f4f4fd;
+             margin-bottom: 8px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+         }
+                                
 /* Our team */
 
    .our-team {
     background-color: #F4F4FD;
-    padding: 120px 0;
+    /* padding: 120px 0; */
 }
 
 
@@ -360,7 +433,7 @@ p{font-size: 12px;
 
 .our-teams-media-list {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 24px;
     margin-top: 8px;
     justify-content: center;
@@ -381,8 +454,8 @@ p{font-size: 12px;
 }
 .our-teams-media-item{
     display: flex;
-    justify-content: center;
     gap: 24px;
+    justify-content: center;
     width: 40px;
     height: 40px;
 }
@@ -401,8 +474,8 @@ p{font-size: 12px;
     background-color: #404bbf;
 }
 .our-teams-media-icon {
-    width: 16px;
-    height: 16px;
+    /* width: 16px;
+    height: 16px; */
     fill: var(--icon-color, #f4f4fd);
 }
 .our-teams-member {
