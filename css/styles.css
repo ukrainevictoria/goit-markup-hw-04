@@ -76,6 +76,13 @@ button {
 .header-logo {
     padding: 24px 0;
     margin-right: 76px;
+    color: #4d5ae5;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    font-family: "Raleway", sans-serif;
    }
 .page-nav {
     display: flex;
@@ -596,7 +603,7 @@ p{font-size: 12px;
 .footer-container {
     display: flex;
     align-items: baseline;
-    padding: 100px 0;
+    
    
 }
 /* Лівий блок (лого + текст) */
@@ -605,14 +612,14 @@ p{font-size: 12px;
 }
 
 /* Контейнер соцмереж */
-.social-media-container {
+/* .social-media-container {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     gap: 16px;
-    
+     */
     /* відступи між заголовком і списком */
-}
+
 
 /* Лого */
 .web-studio-logo {
